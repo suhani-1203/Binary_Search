@@ -6,12 +6,15 @@ public:
         int mid;
         while(low<=high){
             mid=(low+high)/2;
-            if(nums[mid]==target)
+            if(nums[mid]==target){
                return mid;
-            else if(nums[mid]>target)
+            }
+            else if(nums[mid]>target){
                high=mid-1;
-            else
+            }
+            else{
                low=mid+1;
+            }
         }
         return -1;
     }

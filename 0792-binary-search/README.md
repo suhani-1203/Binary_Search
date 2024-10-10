@@ -1,30 +1,34 @@
-<h2><a href="https://leetcode.com/problems/binary-search">792. Binary Search</a></h2><h3>Easy</h3><hr><p>Given an array of integers <code>nums</code> which is sorted in ascending order, and an integer <code>target</code>, write a function to search <code>target</code> in <code>nums</code>. If <code>target</code> exists, then return its index. Otherwise, return <code>-1</code>.</p>
 
-<p>You must write an algorithm with <code>O(log n)</code> runtime complexity.</p>
+# Ceil the floor
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+Given an unsorted array arr[] of integers and an integer x, find the floor and ceiling of x in arr[].
 
-<pre>
-<strong>Input:</strong> nums = [-1,0,3,5,9,12], target = 9
-<strong>Output:</strong> 4
-<strong>Explanation:</strong> 9 exists in nums and its index is 4
-</pre>
+Floor of x is the largest element which is smaller than or equal to x. Floor of x doesn’t exist if x is smaller than smallest element of arr[].
+Ceil of x is the smallest element which is greater than or equal to x. Ceil of x doesn’t exist if x is greater than greatest element of arr[].
 
-<p><strong class="example">Example 2:</strong></p>
+Return an array of integers denoting the [floor, ceil]. Return -1 for floor or ceiling if the floor or ceiling is not present.
 
-<pre>
-<strong>Input:</strong> nums = [-1,0,3,5,9,12], target = 2
-<strong>Output:</strong> -1
-<strong>Explanation:</strong> 2 does not exist in nums so return -1
-</pre>
+Examples:
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+Input: x = 7 , arr[] = [5, 6, 8, 9, 6, 5, 5, 6]
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>4</sup> &lt; nums[i], target &lt; 10<sup>4</sup></code></li>
-	<li>All the integers in <code>nums</code> are <strong>unique</strong>.</li>
-	<li><code>nums</code> is sorted in ascending order.</li>
-</ul>
+Output: 6, 8
+
+Explanation: Floor of 7 is 6 and ceil of 7 is 8.
+
+Input: x = 10 , arr[] = [5, 6, 8, 8, 6, 5, 5, 6]
+
+Output: 8, -1
+
+Explanation: Floor of 10 is 8 but ceil of 10 is not possible.
+
+Expected Time Complexity: O(n)
+
+Expected Auxiliary Space: O(1)
+
+Constraints :
+
+1 ≤ arr.size ≤ 105
+
+1 ≤ arr[i], x ≤ 106
+

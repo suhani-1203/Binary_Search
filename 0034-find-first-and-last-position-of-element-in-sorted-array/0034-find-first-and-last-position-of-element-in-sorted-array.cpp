@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int lowerboundOptimal(vector<int>& arr, int n, int target) {
+   /* int lowerboundOptimal(vector<int>& arr, int n, int target) {
         int low = 0;
         int high = n - 1;
         int ans = n;
@@ -40,9 +40,9 @@ public:
         int ub = upperboundOptimal(arr, n, target);
         return {lb, ub - 1};
     }
-};
+};*/
 
-   /* int lowerBoundOptimal(vector<int>& arr, int n, int target) {
+    int lowerBoundOptimal(vector<int>& arr, int n, int target) {
         int low = 0;
         int high = n - 1;
         int ans=n;
@@ -79,4 +79,5 @@ public:
             int ub = upperBoundOptimal(arr, n, target);
             return {lb, ub - 1};
         }
-    }*/
+    }
+};

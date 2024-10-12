@@ -73,7 +73,7 @@ public:
     vector<int> searchRange(vector<int>& arr, int target) {
         int n = arr.size();
         int lb = lowerBoundOptimal(arr, n, target);
-        if ((lb == n) || (arr[lb] != target))
+        if (lb == n|| arr[lb] != target)
             return {-1, -1};
         else {
             int ub = upperBoundOptimal(arr, n, target);

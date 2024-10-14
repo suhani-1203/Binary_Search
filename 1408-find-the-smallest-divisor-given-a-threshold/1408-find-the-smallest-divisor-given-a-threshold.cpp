@@ -3,7 +3,7 @@ public:
     int check(vector<int>&arr,int divisor){
         int sum=0;
         for(int i=0;i<arr.size();i++){
-            sum=sum+ceil((double)arr[i]/(double)divisor);
+            sum=sum+ceil((float)arr[i]/divisor);
         }
         return sum;
     } 

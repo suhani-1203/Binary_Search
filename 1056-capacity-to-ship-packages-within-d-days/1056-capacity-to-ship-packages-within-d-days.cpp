@@ -27,13 +27,12 @@ public:
             int mid=(low+high)/2;
             int daysTaken=countDays(weights,days,mid);
             if(daysTaken<=days){
-                ans=mid;
                 high=mid-1;
             }
             else{
                 low=mid+1;
             }
         }
-        return ans;
+        return low;
     }
 };

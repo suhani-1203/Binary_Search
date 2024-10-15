@@ -1,19 +1,17 @@
 class Solution {
 public:
-    bool possible(vector<int>&arr,int totalDays,int capacity){
+    int countDays(vector<int>&arr,int totalDays,int capacity){
         int totalWeight=0,noOfDays=1;
         for(int i=0;i<arr.size();i++){
             if((totalWeight+arr[i])>capacity){
                 noOfDays++;
                 totalWeight=arr[i];
-                if(noOfDays>totalDays)
-                    return false;
             }
             else{
                     totalWeight+=arr[i];
             }
         }
-        return noOfDays<=totalDays;
+        return noOfDays;
 
     } 
     int shipWithinDays(vector<int>& weights, int days) {
@@ -27,7 +25,8 @@ public:
         int low=minWeight,high=maxWeight;
         while(low<=high){
             int mid=(low+high)/2;
-            if(possible(weights,days,mid)){
+            int daysTaken=countDays(weights,days,mid);
+            if(daysTaken<=days){
                 ans=mid;
                 high=mid-1;
             }

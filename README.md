@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0392-is-subsequence](https://github.com/suhani-1203/DSA/tree/master/0392-is-subsequence) |
 | [0410-split-array-largest-sum](https://github.com/suhani-1203/DSA/tree/master/0410-split-array-largest-sum) |
 ## Greedy
 |  |
@@ -39,4 +40,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/suhani-1203/DSA/tree/master/0410-split-array-largest-sum) |
+## Two Pointers
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/suhani-1203/DSA/tree/master/0392-is-subsequence) |
+## String
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/suhani-1203/DSA/tree/master/0392-is-subsequence) |
 <!---LeetCode Topics End-->
